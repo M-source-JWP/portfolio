@@ -2,6 +2,7 @@
   --primary: #156064;
   --accent: #95b8d1;
   --background: #292929;
+  --highlight: rgba(255, 255, 255, 0.05);
   --text: #dadada;
 }
 
@@ -29,7 +30,7 @@ h1 {
 
 h2.subtitle {
   font-size: 2.2rem;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-weight: 600;
   letter-spacing: -0.5px;
   opacity: 0.9;
@@ -41,10 +42,9 @@ h2.subtitle {
   justify-content: center;
   gap: 25px;
   flex-wrap: wrap;
-  padding: 40px 20px;
   border-radius: 12px;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 600px;
 }
 
 .tech {
