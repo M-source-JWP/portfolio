@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
   <head>
-    <link rel="stylesheet" href="index.css" />
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michael Pennefather</title>
-    <meta name="description" content="My desc" />
+    <title>Michael Pennefather | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="index.css" />
+    <meta
+      name="description"
+      content="Michael Pennefather - Software Developer Portfolio"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,50 +17,91 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <meta name="theme-color" content="#121212" />
   </head>
   <body>
+    <header>
+      <nav>
+        <div class="logo">MP</div>
+        <div class="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+        </div>
+      </nav>
+    </header>
+
     <main class="open-sans">
-      <div class="hero">
-        <h1>I'm <b>Michael Pennefather</b></h1>
+      <section id="about" class="hero">
+        <div class="hero-content">
+          <h1>I'm <span class="highlight">Michael Pennefather</span></h1>
 
-        <h2 class="subtitle"></h2>
+          <div class="typewriter">
+            <h2 class="subtitle">Software Developer</h2>
+          </div>
 
-        <p>I'm a driven, enthusiastic software developer who loves diving in to new technologies and working as a team.</p> 
-        <p>NOTE: Many facets are WIP at the moment - check back later for the finished site. </p>
+          <p class="hero-description">
+            I'm a driven, enthusiastic software developer who loves diving into
+            new technologies and working as a team.
+          </p>
 
-        <h2 class="subtitle">I'm good with</h2>
-      </div>
+          <p class="note">
+            NOTE: Many facets are WIP at the moment - check back later for the
+            finished site.
+          </p>
 
-      <section class="tech-stack">
-        <div class="tech">
-          <img src="assets/icons/c++.png" alt="C++" />
-          <p>C++</p>
-        </div>
-        <div class="tech">
-          <img src="assets/icons/python.png" alt="Python" />
-          <p>Python</p>
-        </div>
-        <div class="tech">
-          <img src="assets/icons/docker.png" alt="Docker" />
-          <p>Docker</p>
-        </div>
-        <div class="tech">
-          <img src="assets/icons/typescript.png" alt="TypeScript" />
-          <p>TypeScript</p>
-        </div>
-        <div class="tech">
-          <img src="assets/icons/aws.svg" alt="AWS" />
-          <p>AWS</p>
+          <div class="cta-buttons">
+            <a href="#projects" class="cta-button primary">View My Work</a>
+            <a href="#contact" class="cta-button secondary">Get In Touch</a>
+          </div>
         </div>
       </section>
-      <section class="projects">
+
+      <section id="skills" class="skills-section">
+        <h2 class="section-title">I'm good with</h2>
+
+        <div class="tech-stack">
+          <div class="tech">
+            <img src="assets/icons/c++.png" alt="C++" title="C++" />
+            <p>C++</p>
+          </div>
+          <div class="tech">
+            <img src="assets/icons/python.png" alt="Python" title="Python" />
+            <p>Python</p>
+          </div>
+          <div class="tech">
+            <img src="assets/icons/docker.png" alt="Docker" title="Docker" />
+            <p>Docker</p>
+          </div>
+          <div class="tech">
+            <img
+              src="assets/icons/typescript.png"
+              alt="TypeScript"
+              title="TypeScript"
+            />
+            <p>TypeScript</p>
+          </div>
+          <div class="tech">
+            <img src="assets/icons/aws.svg" alt="AWS" title="AWS" />
+            <p>AWS</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section">
         <h2 class="section-title">My Work</h2>
-        <p class="section-description">Testing
-          </p>
+        <p class="section-description">
+          A curated collection of projects showcasing my development experience
+        </p>
 
         <div class="project-grid">
           <a href="ccs-owl.html" class="project">
-            <img src="assets/ccs-owl.png" alt="OWL" />
+            <div class="project-image-container">
+              <img src="assets/ccs-owl.png" alt="OWL" />
+              <div class="project-overlay">
+                <span>View Project</span>
+              </div>
+            </div>
             <div class="project-info">
               <h3>OWL Document Reader</h3>
               <p>
@@ -67,9 +111,13 @@
             </div>
           </a>
 
-
           <a href="poltergheist.html" class="project">
-            <img src="assets/poltergheist.png" alt="Poltergheist" />
+            <div class="project-image-container">
+              <img src="assets/poltergheist.png" alt="Poltergheist" />
+              <div class="project-overlay">
+                <span>View Project</span>
+              </div>
+            </div>
             <div class="project-info">
               <h3>PoltergHEIST</h3>
               <p>Die. Rob a bank. As a ghost.</p>
@@ -77,43 +125,265 @@
           </a>
 
           <a href="warlocked.html" class="project">
-            <img src="assets/warlocked.png" alt="Warlocked" />
+            <div class="project-image-container">
+              <img src="assets/warlocked.png" alt="Warlocked" />
+              <div class="project-overlay">
+                <span>View Project</span>
+              </div>
+            </div>
             <div class="project-info">
-              <h2>Warlocked</h3>
+              <h3>Warlocked</h3>
               <p>
-                Top-down roguelike dungeon crawler featuring a scratch-built C++ engine.
+                Top-down roguelike dungeon crawler featuring a scratch-built C++
+                engine.
               </p>
             </div>
           </a>
 
           <a href="infinight.html" class="project">
-            <img src="assets/infinight.png" alt="infinight" />
+            <div class="project-image-container">
+              <img src="assets/infinight.png" alt="Infinight" />
+              <div class="project-overlay">
+                <span>View Project</span>
+              </div>
+            </div>
             <div class="project-info">
-              <h2>Infinight (BC Game Jam 2022)</h3>
+              <h3>Infinight (BC Game Jam 2022)</h3>
               <p>
-                Endless survival platformer where you avoid the encroaching dark.     
+                Endless survival platformer where you avoid the encroaching
+                dark.
               </p>
             </div>
           </a>
 
-          <a href="poltergheist.html" class="project">
-            <img src="assets/poltergheist.png" alt="Poltergheist" />
+          <a href="project5.html" class="project">
+            <div class="project-image-container">
+              <img src="assets/project-placeholder.jpg" alt="Project 5" />
+              <div class="project-overlay">
+                <span>Coming Soon</span>
+              </div>
+            </div>
             <div class="project-info">
-              <h3>PoltergHEIST</h3>
-              <p>Die. Rob a bank. As a ghost.</p>
+              <h3>Project 5</h3>
+              <p>Details coming soon...</p>
             </div>
           </a>
 
-          <a href="poltergheist.html" class="project">
-            <img src="assets/poltergheist.png" alt="Poltergheist" />
+          <a href="project6.html" class="project">
+            <div class="project-image-container">
+              <img src="assets/project-placeholder.jpg" alt="Project 6" />
+              <div class="project-overlay">
+                <span>Coming Soon</span>
+              </div>
+            </div>
             <div class="project-info">
-              <h3>PoltergHEIST</h3>
-              <p>Die. Rob a bank. As a ghost.</p>
+              <h3>Project 6</h3>
+              <p>Details coming soon...</p>
             </div>
           </a>
         </div>
       </section>
     </main>
-    <!--<script type="module" src="/src/main.tsx"></script>-->
+
+    <footer id="contact">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>Connect With Me</h3>
+          <div class="social-links">
+            <a
+              href="https://github.com/M-source-JWP"
+              target="_blank"
+              class="social-link"
+              title="GitHub"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mpennefather/"
+              target="_blank"
+              class="social-link"
+              title="LinkedIn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a
+              href="mailto:mikepennefather1@gmail.com"
+              class="social-link"
+              title="Email"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+
+        // Add scroll class to header
+        const header = document.querySelector("header");
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 100) {
+            header.classList.add("scrolled");
+          } else {
+            header.classList.remove("scrolled");
+          }
+        });
+
+        // Tech icons tooltip functionality
+        const techIcons = document.querySelectorAll(".tech img");
+        techIcons.forEach((icon) => {
+          icon.addEventListener("mouseenter", showTooltip);
+          icon.addEventListener("mouseleave", hideTooltip);
+        });
+
+        // Social links tooltip functionality
+        const socialLinks = document.querySelectorAll(".social-link");
+        socialLinks.forEach((link) => {
+          link.addEventListener("mouseenter", showTooltip);
+          link.addEventListener("mouseleave", hideTooltip);
+        });
+
+        // Typewriter effect for subtitle
+        const subtitle = document.querySelector(".subtitle");
+        const roles = [
+          "Software Developer",
+          "Game Developer",
+          "AWS Specialist",
+          "Problem Solver",
+        ];
+        let roleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingDelay = 100;
+
+        function typeEffect() {
+          const currentRole = roles[roleIndex];
+
+          if (isDeleting) {
+            // Deleting text
+            subtitle.textContent = currentRole.substring(0, charIndex - 1);
+            charIndex--;
+            typingDelay = 50;
+          } else {
+            // Typing text
+            subtitle.textContent = currentRole.substring(0, charIndex + 1);
+            charIndex++;
+            typingDelay = 150;
+          }
+
+          // If word is complete, start deleting after pause
+          if (!isDeleting && charIndex === currentRole.length) {
+            isDeleting = true;
+            typingDelay = 1000; // Pause at end of word
+          }
+          // If deletion is complete, move to next word
+          else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+            typingDelay = 500; // Pause before typing new word
+          }
+
+          setTimeout(typeEffect, typingDelay);
+        }
+
+        // Start the typewriter effect
+        setTimeout(typeEffect, 1000);
+      });
+
+      // Tooltip functions
+      function showTooltip(e) {
+        const tooltip = document.createElement("div");
+        tooltip.className = "tooltip";
+        tooltip.textContent = e.target.getAttribute("title");
+
+        tooltip.style.position = "absolute";
+        tooltip.style.top = e.target.getBoundingClientRect().bottom + 5 + "px";
+        tooltip.style.left =
+          e.target.getBoundingClientRect().left +
+          e.target.offsetWidth / 2 +
+          "px";
+        tooltip.style.transform = "translateX(-50%)";
+
+        document.body.appendChild(tooltip);
+
+        // Trigger animation
+        setTimeout(() => {
+          tooltip.style.opacity = "1";
+        }, 10);
+      }
+
+      function hideTooltip() {
+        const tooltip = document.querySelector(".tooltip");
+        if (tooltip) {
+          tooltip.style.opacity = "0";
+          setTimeout(() => {
+            tooltip.remove();
+          }, 300);
+        }
+      }
+    </script>
   </body>
 </html>
