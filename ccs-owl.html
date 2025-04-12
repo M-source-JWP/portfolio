@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poltergheist | Project Showcase</title>
+    <title>OWL Document Reader | Project Showcase</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="project.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <meta name="theme-color" content="#121212" />
@@ -19,26 +19,28 @@
     <nav>
       <a href="index.html" class="nav-home">Home</a>
       <span class="nav-separator">&gt;</span>
-      <span class="nav-project">Poltergheist</span>
+      <span class="nav-project">OWL Document Reader</span>
     </nav>
 
     <div class="slideshow-container">
       <!-- Slide 1 -->
       <div class="mySlides active">
-        <video controls class="slide-media">
-          <source src="assets/poltergheist/matrix-demo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div class="caption">Project Video Demo</div>
+        <img
+          src="assets/owl/ocr-demo.jpg"
+          class="slide-media"
+          alt="Live OCR Processing"
+        />
+        <div class="caption">Real-time Document Analysis</div>
       </div>
 
       <!-- Slide 2 -->
       <div class="mySlides">
-        <video controls class="slide-media">
-          <source src="assets/poltergheist/demo-2.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div class="caption">Project Video Demo</div>
+        <img
+          src="assets/owl/validation-ui.jpg"
+          class="slide-media"
+          alt="Active Validation Interface"
+        />
+        <div class="caption">Interactive Data Correction</div>
       </div>
 
       <!-- Navigation Arrows -->
@@ -54,57 +56,67 @@
 
     <!-- Project Info -->
     <div class="project-info">
-      <h2 class="info-title">Poltergheist</h2>
+      <h2 class="info-title">OWL Document Reader</h2>
 
       <div class="tech-icons">
-        <img src="assets/icons/unity.png" alt="Unity Icon" title="Unity" />
-        <img src="assets/icons/csharp.png" alt="C# Icon" title="C#" />
+        <img
+          src="assets/icons/aws.png"
+          alt="AWS Icon"
+          title="Amazon Web Services"
+        />
+        <img src="assets/icons/python.png" alt="Python Icon" title="Python" />
+        <img src="assets/icons/react.png" alt="React Icon" title="React" />
+        <img
+          src="assets/icons/postgres.png"
+          alt="PostgreSQL Icon"
+          title="PostgreSQL"
+        />
       </div>
 
       <p class="project-description">
-        A physics-based FPS where every object can be picked up and thrown, from
-        bottles, to bullets, to enemies. Use your psychic powers to smash and
-        grab and fund your life after death.
+        An enterprise-grade document processing system leveraging AWS Textract
+        OCR to transform traditional financial workflows into streamlined
+        digital operations with high accuracy and efficiency.
       </p>
     </div>
 
     <div class="content-section">
       <div class="content-block">
-        <h3 class="content-header">Features</h3>
+        <h3 class="content-header">Active Development</h3>
         <ul class="content-list">
           <li>
-            Physics-based movement allowing for seamless collision and
-            player/enemy knockback
+            Building serverless AWS pipeline to process 500+ documents daily
           </li>
           <li>
-            Physics-based damage system allowing for objects and enemies to be
-            destroyed based on kinematics
+            Developing Mobile-friendly UI to scan and upload documents on the go
           </li>
-          <li>The Matrix!!!</li>
+          <li>
+            Optimizing Textract validation interface reducing manual corrections
+          </li>
         </ul>
       </div>
 
       <div class="content-block">
-        <h3 class="content-header">Target Audience</h3>
+        <h3 class="content-header">Core Technologies</h3>
         <ul class="content-list">
-          <li>Game developers working with browser-based 3D</li>
-          <li>FPS enthusiasts looking for innovative gameplay mechanics</li>
-          <li>Players who enjoy physics-based sandbox games</li>
+          <li>Utilizing AWS Textract OCR with dynamic confidence thresholds</li>
+          <li>Developing Python validation algorithms with CI/CD pipelines</li>
+          <li>Architecting React/TypeScript dashboard with RBAC controls</li>
         </ul>
       </div>
 
       <div class="content-block">
-        <h3 class="content-header">Learning Objectives</h3>
+        <h3 class="content-header">Current Milestones</h3>
         <ul class="content-list">
-          <li>Gain experience with Unity's physics engine</li>
-          <li>Implement intuitive telekinetic object manipulation</li>
-          <li>Develop custom physics simulations</li>
+          <li>Reducing processing latency from 15min to 8sec/document</li>
+          <li>Connecting REST APIs to 3+ legacy banking systems</li>
+          <li>Automating quality checks catching 89% of OCR errors</li>
         </ul>
       </div>
     </div>
 
     <footer>
-      <p>&copy; 2025 Poltergheist Project</p>
+      <p>&copy; 2025 OWL Document Reader Project</p>
     </footer>
 
     <script>
